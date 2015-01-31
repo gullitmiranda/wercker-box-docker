@@ -1,4 +1,4 @@
-name: gullitmiranda/docker
+name: docker
 version: 1.4.0
 inherits: wercker/ubuntu12.04-webessentials@1.0.4
 type: service
