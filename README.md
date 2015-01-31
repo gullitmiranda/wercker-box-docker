@@ -1,2 +1,3 @@
-# wercker-box-docker
-Docker box to Wercker CI
+# gullitmiranda/docker
+
+Wercker box with Docker 1.4.1
