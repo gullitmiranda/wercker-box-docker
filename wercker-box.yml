@@ -1,0 +1,14 @@
+name: gullitmiranda/docker
+version: 1.4.0
+inherits: ruudk/ubuntu14.04@1.0.0
+type: main
+platform: ubuntu@14.04
+description: Docker box to Wercker
+keywords:
+  - docker
+  - ubuntu
+scripts: |
+  curl -sSL https://get.docker.com/ubuntu/ | sudo sh
+  sudo groupadd docker -f
+  sudo gpasswd -a ${USER} docker
+  sudo service docker restart
