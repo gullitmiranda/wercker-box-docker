@@ -5,16 +5,15 @@ type: main
 platform: ubuntu@12.04
 description: Docker box to Wercker
 keywords:
-    - docker
-    - ubuntu
-    - azk
-    - git
+  - docker
+  - ubuntu
+  - azk
+  - git
 scripts: |
-    sudo apt-get upgrade -y lxc-docker
-    sudo -E apt-get install libnss-resolver -y
-    git config --global user.email \"support@azukiapp.com\"
-    git config --global user.name \"azuki\"
-    sudo wget -O /etc/init/docker.conf https://raw.github.com/dotcloud/docker/master/contrib/init/upstart/docker.conf
-    sudo service docker restart
-    sudo -E usermod -a -G docker ubuntu
-    sudo -E docker pull azukiapp/azktcl:0.0.2
+  sudo -E apt-get install libnss-resolver -y
+  git config --global user.email \"support@azukiapp.com\"
+  git config --global user.name \"azuki\"
+  sudo wget -O /etc/init/docker.conf https://raw.github.com/dotcloud/docker/master/contrib/init/upstart/docker.conf
+  sudo service docker restart
+  sudo -E usermod -a -G docker ubuntu
+  sudo -E docker pull azukiapp/azktcl:0.0.2
