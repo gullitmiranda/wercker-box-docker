@@ -2,7 +2,6 @@ name: docker
 version: 0.0.3
 inherits: wercker-labs/docker
 type: main
-platform: ubuntu@13.10
 description: Docker box to Wercker
 keywords:
   - docker
